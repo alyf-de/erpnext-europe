@@ -6,7 +6,7 @@ country: "France"
 country_slug: "france"
 year_founded: 2001
 team_size: "22"
-partner_tier: "Emerging"
+partner_tier: "Entry"
 industries: ["Technology & IT"]
 languages: ["French", "English"]
 also_serves: []

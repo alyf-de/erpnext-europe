@@ -6,7 +6,7 @@ country: "United Kingdom"
 country_slug: "united-kingdom"
 year_founded: 2024
 team_size: "11 employees"
-partner_tier: null
+partner_tier: "Emerging"
 industries: ["Manufacturing", "Retail & E-commerce", "Healthcare"]
 languages: ["English"]
 also_serves: []

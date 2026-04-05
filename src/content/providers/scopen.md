@@ -6,7 +6,7 @@ country: "France"
 country_slug: "france"
 year_founded: 2020
 team_size: "< 10 employees"
-partner_tier: "Emerging"
+partner_tier: "Entry"
 industries: ["Manufacturing", "Professional Services", "Public Sector & Nonprofits"]
 languages: ["French", "English"]
 also_serves: []

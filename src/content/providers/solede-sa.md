@@ -6,7 +6,7 @@ country: "Switzerland"
 country_slug: "switzerland"
 year_founded: 2024
 team_size: null
-partner_tier: null
+partner_tier: "Entry"
 industries: ["Manufacturing", "Retail & E-commerce", "Project Management", "Education", "Professional Services"]
 languages: ["Italian", "English"]
 also_serves: []
