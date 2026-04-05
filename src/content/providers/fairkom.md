@@ -95,6 +95,12 @@ fairteaching services are available through fairkom for comprehensive staff trai
 
 fairkom has integrated their own online shop with ERPNext, allowing WordPress e-commerce purchases to be transferred directly to the merchandise management system.
 
+Named clients from their website (fairkom.eu/referenzen-und-partner):
+- **Pädagogisches Landesinstitut Rheinland-Pfalz**: Schulchat RLP Matrix messaging solution
+- **Humboldt-Universität zu Berlin**: Element extension for BBB meetings
+- **Austrian Public Administration**: Termino videoconference platform (via BBG, with Softcom)
+- **European Cultural Foundation**: Technical infrastructure for Display Europe community media platform
+
 ### What is the typical size of your clients?
 
 fairkom serves organizations of various sizes in business, public administration, and civil society

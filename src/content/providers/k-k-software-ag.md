@@ -100,8 +100,11 @@ Yes, professional ERPNext consulting and support services
 
 ### Can you share one or two case studies or anonymized project examples?
 
-Yes, documented case study:
-- **Gemeindewerke Adelsdorf**: Municipal utilities implementation case study (presented at ERPNext user meeting)
+Yes, documented case studies from their Frappe Partner page:
+- **Gemeindewerke Adelsdorf**: Municipal utilities implementation (presented at ERPNext user meeting)
+- **ELAN e.V.**: Higher education management with ERPNext (nonprofit sector)
+- **Modulbox M.O Systeme**: Mobile brand architecture built with ERPNext (manufacturing)
+- **Frank & Dvorak GmbH & Co. KG**: Austrian electric motor manufacturer running ERPNext (automotive manufacturing)
 
 ### What is the typical size of your clients?
 

@@ -69,6 +69,15 @@ Limendo provides practical training workshops to facilitate working with mERP, i
 
 ## References & Track Record
 
+### Can you share one or two case studies or anonymized project examples?
+
+Named clients from their website:
+- **Kaufgut GmbH**: mERP for wholesale operations
+- **Mein Beck GmbH**: Full mERP from financial accounting to picking and inventory management
+- **Mulser Tore GmbH**: mERP for maintenance processes and CRM
+- **Aster GmbH**: mERP from personnel management through production planning
+- **Seeleiten**, **Anna Pichler**, **Pan**, **Reider** (logos displayed)
+
 ### What is the typical size of your clients?
 
 Small and medium-sized enterprises (SMEs)

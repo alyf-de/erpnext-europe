@@ -77,6 +77,13 @@ Quick response times (specific SLAs not detailed)
 
 ## References & Track Record
 
+### Can you share one or two case studies or anonymized project examples?
+
+Named clients from their website (centura.ch/kunden-partner):
+- **Simpera**, **Swiss Fibertec**, **Helbling**, **Direktkurier**, **Wechselraum**, **ODAN**, **Laware**, **Magenbrotrohner**, **Verkehrskadetten-Abteilung Rapperswil-Jona**
+
+Partners: Stieger Treuhand, Futur. Research partner: OST Ostschweizer Fachhochschule.
+
 ### What is the typical size of your clients?
 
 Swiss SMEs, organizations, and authorities

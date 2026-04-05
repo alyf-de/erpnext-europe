@@ -87,7 +87,10 @@ User training included in implementation
 
 ### Can you share one or two case studies or anonymized project examples?
 
-No specific case studies publicly available. Website references "hundreds of successful projects" following their structured process, but individual examples are not published.
+Website displays logos of industry leaders as clients:
+- **ConvaTec** (medical technology), **Covetrus** (animal health technology), **Staples** (office supplies), **Lyreco** (office supplies distribution), **Marel** (food processing equipment), **FAL**
+
+No detailed case studies published, but website references "hundreds of successful projects" following their structured Discovery-Design-Build-Launch process.
 
 ## Pricing
 

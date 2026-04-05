@@ -90,7 +90,18 @@ Training to ensure acceptance and active use by employees; web customization ser
 
 ### Can you share one or two case studies or anonymized project examples?
 
-Organizes ERPNext user meetings for DACH region with presentations from users and new features
+Named clients featured on their website with testimonials:
+- **iNCO Natural GmbH** (Sarah Polzhofer, Production & EU Sales)
+- **SELLCARE** (Roman Urech, Managing Partner)
+- **Hoferhecht Stickereien** (Selma Grabher, CEO)
+- **Fink Zeitsysteme** (Stefan Fink, CEO/R&D)
+- **SPO Patientenorganisation** (Gabriela Lassnig)
+- **Braun und Klöti AG** (Thomas Lassnig)
+- **Rubirosa** (Flavio Agosti, CEO)
+- **Lifefair** (Anne le Duc, CEO)
+- **Schweizerische Einkaufsgesellschaft (SEG)** (Nicola Pulfer, CEO)
+
+Also organizes ERPNext user meetings for DACH region with presentations from users and new features
 
 ### What is the typical size of your clients?
 

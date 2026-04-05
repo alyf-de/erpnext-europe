@@ -73,6 +73,15 @@ Workshops, customization support, training (Schulungen)
 
 ## References & Track Record
 
+### Can you share one or two case studies or anonymized project examples?
+
+- **voidsy gmbh**: Process optimization through professional ERPNext implementation and customization (Dr. Holger Plasser, CEO)
+- **DriveCon GmbH**: Structured and collaborative ERPNext introduction (Michael Weisenseel, CEO)
+- **WEROCK Technologies GmbH**: Chose ERPNext for scalability and adaptability to individual process requirements (Markus Nicoleit, CEO)
+- **INDIMO Automotive GmbH**: Successful business process mapping with numerous custom requirements implemented efficiently (Thomas Schelsky)
+- **itsdave GmbH**: Valued as a reliable project partner with bundled Frappe and ERPNext know-how (David Malinowski, CEO)
+- **DACHDIGITAL GmbH**: Long-standing trusted partnership enabling a unique industry ERP solution for their customers (Markus Jüngst, CEO)
+
 ### What is the typical size of your clients?
 
 Small to medium-sized enterprises (SMEs)

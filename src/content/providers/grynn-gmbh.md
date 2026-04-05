@@ -73,7 +73,10 @@ Structured implementation services with focus on digital transformation
 
 ### Can you share one or two case studies or anonymized project examples?
 
-Hosts 19+ ERPNext sites; Manages digital marketing for 7+ international brands generating USD 1 million revenue per month; Manages USD 100k in Google Ad spend
+Hosts 19+ ERPNext sites. Client testimonials from their website:
+- **Weldplast s.r.o.**: Successful ERP migration with 10 years of data completed in 8 weeks (Marek Z., CEO)
+- **Tüit GmbH**: Bug resolution and user satisfaction (Wolfram Schmidt, CEO)
+- **V3 Technologies**: Order-to-payment process optimization including payment reminders (Sridhar A., Director)
 
 ### What is the typical size of your clients?
 
