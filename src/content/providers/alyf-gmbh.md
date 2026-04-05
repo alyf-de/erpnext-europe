@@ -7,7 +7,7 @@ country_slug: "germany"
 year_founded: 2020
 team_size: "2-10 employees"
 partner_tier: "Bronze"
-industries: ["Manufacturing", "Professional Services", "Distribution & Logistics", "Retail & E-commerce", "Agriculture & Food", "Technology & IT"]
+industries: ["Manufacturing", "Professional Services", "Distribution & Logistics", "Retail & E-commerce", "Agriculture & Food", "Technology & IT", "Construction & Trades"]
 languages: ["German", "English"]
 also_serves: ["Austria"]
 ---

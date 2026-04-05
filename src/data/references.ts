@@ -47,7 +47,7 @@ export const references: Reference[] = [
   {
     name: "INDIMO Automotive GmbH",
     website: null,
-    industry: "Manufacturing",
+    industry: "Distribution & Logistics",
     country: "Germany",
     description:
       "Automotive company with complex business processes successfully mapped in ERPNext including numerous custom requirements.",
@@ -58,10 +58,10 @@ export const references: Reference[] = [
   {
     name: "itsdave GmbH",
     website: "https://www.itsdave.de",
-    industry: "Technology & IT",
+    industry: "Retail & E-commerce",
     country: "Germany",
     description:
-      "Managed IT services provider for SMEs in northern Germany, offering monitoring, security, support, and cloud infrastructure.",
+      "Outlet center operator using ERPNext for their business operations, implemented by ALYF.",
     provider_slug: "alyf-gmbh",
     provider_name: "ALYF GmbH",
     provider_country_slug: "germany",
@@ -69,10 +69,10 @@ export const references: Reference[] = [
   {
     name: "DACHDIGITAL GmbH",
     website: null,
-    industry: "Technology & IT",
+    industry: "Construction & Trades",
     country: "Germany",
     description:
-      "Technology company that built a unique industry ERP solution for their customers through a long-standing partnership with ALYF.",
+      "Technology company that built a specialized ERP solution for roofing companies through a long-standing partnership with ALYF.",
     provider_slug: "alyf-gmbh",
     provider_name: "ALYF GmbH",
     provider_country_slug: "germany",
