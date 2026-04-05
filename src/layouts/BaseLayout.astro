@@ -1,0 +1,92 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const {
+  title,
+  description = "Directory of ERPNext service providers across Europe",
+} = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const fullTitle = `${title} | ERPNext Europe`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <link rel="canonical" href={canonicalURL} />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href={`${import.meta.env.BASE_URL}/favicon.svg`}
+    />
+  </head>
+  <body class="min-h-screen flex flex-col bg-white text-text font-sans">
+    <header class="bg-primary text-white">
+      <nav
+        class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <a
+          href={import.meta.env.BASE_URL}
+          class="text-xl font-bold hover:opacity-90 transition-opacity"
+        >
+          ERPNext Europe
+        </a>
+        <div class="flex gap-6 text-sm">
+          <a href={import.meta.env.BASE_URL} class="hover:underline"
+            >Directory</a
+          >
+          <a
+            href={`${import.meta.env.BASE_URL}/partnership/`}
+            class="hover:underline">Partnership Levels</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main class="flex-1 max-w-6xl mx-auto px-4 py-8 w-full">
+      <slot />
+    </main>
+
+    <footer class="bg-surface border-t border-border mt-auto">
+      <div class="max-w-6xl mx-auto px-4 py-6 text-sm text-text-muted">
+        <div
+          class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"
+        >
+          <div>
+            <p class="font-medium text-text">ERPNext Europe</p>
+            <p class="mt-1">
+              A community-maintained directory of ERPNext service providers
+              across Europe.
+            </p>
+          </div>
+          <div class="flex flex-col sm:items-end gap-1">
+            <a
+              href="https://frappe.io/partners"
+              class="text-primary hover:underline"
+              target="_blank"
+              rel="noopener">Official Frappe Partner Directory</a
+            >
+            <a
+              href="https://github.com/alyf-de/erpnext-europe"
+              class="text-primary hover:underline"
+              target="_blank"
+              rel="noopener">Contribute on GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

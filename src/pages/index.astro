@@ -1,0 +1,233 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Icon from "../components/Icon.astro";
+
+const providers = await getCollection("providers");
+
+// Group by country
+const countriesMap = new Map<
+  string,
+  { name: string; slug: string; count: number }
+>();
+for (const p of providers) {
+  const key = p.data.country_slug;
+  if (!countriesMap.has(key)) {
+    countriesMap.set(key, {
+      name: p.data.country,
+      slug: p.data.country_slug,
+      count: 0,
+    });
+  }
+  countriesMap.get(key)!.count++;
+}
+const countries = [...countriesMap.values()].sort((a, b) =>
+  a.name.localeCompare(b.name),
+);
+
+// Collect unique industries for filter
+const allIndustries = [
+  ...new Set(providers.flatMap((p) => p.data.industries)),
+].sort();
+
+// Sort providers by name
+const sortedProviders = [...providers].sort((a, b) =>
+  a.data.name.localeCompare(b.data.name),
+);
+
+const countryFlags: Record<string, string> = {
+  Austria: "\u{1F1E6}\u{1F1F9}",
+  France: "\u{1F1EB}\u{1F1F7}",
+  Germany: "\u{1F1E9}\u{1F1EA}",
+  Italy: "\u{1F1EE}\u{1F1F9}",
+  Netherlands: "\u{1F1F3}\u{1F1F1}",
+  Poland: "\u{1F1F5}\u{1F1F1}",
+  Portugal: "\u{1F1F5}\u{1F1F9}",
+  Slovakia: "\u{1F1F8}\u{1F1F0}",
+  Spain: "\u{1F1EA}\u{1F1F8}",
+  Switzerland: "\u{1F1E8}\u{1F1ED}",
+  "United Kingdom": "\u{1F1EC}\u{1F1E7}",
+};
+---
+
+<BaseLayout
+  title="ERPNext Service Providers in Europe"
+  description="Find ERPNext implementation partners, consultants, and service providers across Europe."
+>
+  <section class="mb-12">
+    <h1 class="text-3xl font-bold text-primary mb-2">
+      ERPNext Service Providers in Europe
+    </h1>
+    <p class="text-text-muted text-lg mb-8">
+      Find ERPNext implementation partners, consultants, and service providers
+      across {countries.length} European countries.
+    </p>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+      {
+        countries.map((c) => (
+          <a
+            href={`${import.meta.env.BASE_URL}/${c.slug}/`}
+            class="block p-4 rounded-lg border border-border hover:border-primary hover:shadow-md transition-all bg-white"
+          >
+            <span class="text-2xl">
+              {countryFlags[c.name] || "\u{1F3F3}\u{FE0F}"}
+            </span>
+            <h2 class="font-semibold mt-1">{c.name}</h2>
+            <p class="text-sm text-text-muted">
+              {c.count} {c.count === 1 ? "provider" : "providers"}
+            </p>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <section>
+    <div class="flex flex-col sm:flex-row sm:items-center gap-4 mb-6">
+      <h2 class="text-2xl font-bold">All Providers</h2>
+      <div class="flex flex-wrap items-center gap-3 sm:ml-auto" id="filters">
+        <select
+          id="filter-country"
+          class="px-3 py-1.5 border border-border rounded-md text-sm bg-white"
+        >
+          <option value="">All countries</option>
+          {countries.map((c) => <option value={c.slug}>{c.name}</option>)}
+        </select>
+        <select
+          id="filter-industry"
+          class="px-3 py-1.5 border border-border rounded-md text-sm bg-white"
+        >
+          <option value="">All industries</option>
+          {allIndustries.map((ind) => <option value={ind}>{ind}</option>)}
+        </select>
+        <button
+          id="filter-clear"
+          class="text-sm text-primary hover:underline hidden"
+          >Clear filters</button
+        >
+        <span id="filter-count" class="text-sm text-text-muted self-center"
+          >{sortedProviders.length} providers</span
+        >
+      </div>
+    </div>
+
+    <div class="grid gap-4 md:grid-cols-2" id="provider-grid">
+      {
+        sortedProviders.map((p) => (
+          <a
+            href={`${import.meta.env.BASE_URL}/${p.data.country_slug}/${p.id}/`}
+            class="provider-card block p-5 rounded-lg border border-border hover:border-primary hover:shadow-md transition-all bg-white"
+            data-country={p.data.country_slug}
+            data-industries={JSON.stringify(p.data.industries)}
+          >
+            <div class="flex items-start justify-between gap-2">
+              <div>
+                <h3 class="font-semibold text-lg">{p.data.name}</h3>
+                <p class="text-sm text-text-muted">
+                  {p.data.city ? `${p.data.city}, ` : ""}
+                  {p.data.country}
+                  {p.data.year_founded
+                    ? ` \u00B7 Est. ${p.data.year_founded}`
+                    : ""}
+                </p>
+              </div>
+              {p.data.partner_tier && (
+                <span class="inline-block px-2 py-0.5 text-xs font-medium rounded-full bg-accent/10 text-accent whitespace-nowrap">
+                  {p.data.partner_tier} Partner
+                </span>
+              )}
+            </div>
+            <div class="flex flex-wrap items-center gap-x-4 gap-y-1 mt-2 text-xs text-text-muted">
+              {p.data.languages.length > 0 && (
+                <span>
+                  <Icon name="message-circle" size={12} />{" "}
+                  {p.data.languages.join(", ")}
+                </span>
+              )}
+              {p.data.team_size && (
+                <span>
+                  <Icon name="users" size={12} /> {p.data.team_size}
+                </span>
+              )}
+            </div>
+            {p.data.industries.length > 0 && (
+              <div class="flex flex-wrap gap-1.5 mt-3">
+                {p.data.industries.slice(0, 4).map((ind) => (
+                  <span class="px-2 py-0.5 text-xs rounded bg-surface text-text-muted">
+                    {ind}
+                  </span>
+                ))}
+                {p.data.industries.length > 4 && (
+                  <span class="px-2 py-0.5 text-xs rounded bg-surface text-text-muted">
+                    +{p.data.industries.length - 4}
+                  </span>
+                )}
+              </div>
+            )}
+          </a>
+        ))
+      }
+    </div>
+
+    <p id="no-results" class="hidden text-center py-12 text-text-muted">
+      No providers match the current filters. Try broadening your search.
+    </p>
+  </section>
+
+  <script>
+    const countrySelect = document.getElementById(
+      "filter-country",
+    ) as HTMLSelectElement;
+    const industrySelect = document.getElementById(
+      "filter-industry",
+    ) as HTMLSelectElement;
+    const countEl = document.getElementById("filter-count")!;
+    const clearBtn = document.getElementById(
+      "filter-clear",
+    ) as HTMLButtonElement;
+    const noResults = document.getElementById("no-results")!;
+    const grid = document.getElementById("provider-grid")!;
+    const cards = document.querySelectorAll<HTMLElement>(".provider-card");
+
+    function applyFilters() {
+      const country = countrySelect.value;
+      const industry = industrySelect.value;
+      let visible = 0;
+
+      cards.forEach((card) => {
+        const cardCountry = card.dataset.country || "";
+        const cardIndustries: string[] = JSON.parse(
+          card.dataset.industries || "[]",
+        );
+
+        const matchCountry = !country || cardCountry === country;
+        const matchIndustry = !industry || cardIndustries.includes(industry);
+
+        if (matchCountry && matchIndustry) {
+          card.style.display = "";
+          visible++;
+        } else {
+          card.style.display = "none";
+        }
+      });
+
+      countEl.textContent = `${visible} provider${visible !== 1 ? "s" : ""}`;
+
+      const hasFilters = country || industry;
+      clearBtn.classList.toggle("hidden", !hasFilters);
+      noResults.classList.toggle("hidden", visible > 0);
+      grid.classList.toggle("hidden", visible === 0);
+    }
+
+    function clearFilters() {
+      countrySelect.value = "";
+      industrySelect.value = "";
+      applyFilters();
+    }
+
+    countrySelect.addEventListener("change", applyFilters);
+    industrySelect.addEventListener("change", applyFilters);
+    clearBtn.addEventListener("click", clearFilters);
+  </script>
+</BaseLayout>

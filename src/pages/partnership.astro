@@ -1,0 +1,210 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const providers = await getCollection("providers");
+const tiered = providers
+  .filter((p) => p.data.partner_tier)
+  .sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+const tiers = [
+  {
+    name: "Gold",
+    target: "$6,900/mo",
+    description:
+      "Highest active tier with significant Frappe Cloud revenue, multiple certified professionals, and proven delivery quality. Unlocks lead sharing, deal closure assistance, and pre-sales support.",
+  },
+  {
+    name: "Silver",
+    target: "$2,875/mo",
+    description:
+      "Established partners with consistent Frappe Cloud sales, certified team members, and successful quality audits.",
+  },
+  {
+    name: "Bronze",
+    target: "$690/mo",
+    description:
+      "Active partners meeting baseline Frappe Cloud sales targets with certified professionals on their team. Listed in the official Frappe partner directory.",
+  },
+  {
+    name: "Emerging",
+    target: "$350/mo",
+    description:
+      "Verified by Frappe, active in projects, and steadily expanding their expertise. Building toward a full partner listing.",
+  },
+  {
+    name: "Entry",
+    target: "None",
+    description:
+      "Starting tier for new partners. Must upgrade at least once within one year. Frappe provides product training and certifications for two team members.",
+  },
+];
+---
+
+<BaseLayout
+  title="Frappe Partnership Levels Explained"
+  description="How the Frappe partner program works: tiers, requirements, and what they mean for ERPNext service providers."
+>
+  <nav class="text-sm text-text-muted mb-6">
+    <a href={import.meta.env.BASE_URL} class="hover:text-primary">Home</a>
+    <span class="mx-1">/</span>
+    <span>Partnership Levels</span>
+  </nav>
+
+  <h1 class="text-3xl font-bold text-primary mb-3">
+    Frappe Partnership Levels
+  </h1>
+  <p class="text-text-muted text-lg mb-8 max-w-3xl">
+    Understanding what the partner tiers mean and how they are earned.
+  </p>
+
+  <div class="max-w-3xl space-y-8">
+    <section>
+      <h2 class="text-2xl font-bold mb-4">How the program works</h2>
+      <p class="leading-relaxed mb-4">
+        The Frappe partner program is <strong>primarily sales-driven</strong>.
+        Partner tiers are determined by how much
+        <a
+          href="https://frappecloud.com"
+          target="_blank"
+          rel="noopener"
+          class="text-primary hover:underline">Frappe Cloud</a
+        >
+        managed hosting a service provider sells. The more hosting revenue a partner
+        generates, the higher their tier.
+      </p>
+      <p class="leading-relaxed mb-4">
+        Beyond sales volume, Frappe applies <strong>quality controls</strong>:
+      </p>
+      <ul class="space-y-3 pl-6 list-disc text-text">
+        <li>
+          <strong>Certified professionals</strong> &mdash; All partners must have
+          at least two full-time team members certified through <a
+            href="https://frappe.school"
+            target="_blank"
+            rel="noopener"
+            class="text-primary hover:underline">Frappe School</a
+          >
+          (ERPNext Functional Consultant or Frappe Framework Developer credentials).
+        </li>
+        <li>
+          <strong>Implementation track record</strong> &mdash; Partners need at least
+          three verifiable successful ERP/ERPNext deployments to qualify.
+        </li>
+        <li>
+          <strong>Quality audits</strong> &mdash; Frappe conducts quarterly review
+          meetings and partner audits (SOP audits), inspired by ISO 9001 process maturity
+          standards. These assess implementation quality, customer satisfaction, and
+          adherence to best practices.
+        </li>
+        <li>
+          <strong>Active cloud presence</strong> &mdash; Partners must maintain an
+          active Frappe Cloud account with at least one live site.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold mb-4">Tier advancement and demotion</h2>
+      <p class="leading-relaxed mb-4">
+        Partners advance by meeting the sales targets of the next level for <strong
+          >two consecutive quarters</strong
+        >. Conversely, failing to meet targets for two consecutive quarters
+        results in demotion. Entry-level partners must upgrade at least once
+        within their first year.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold mb-4">The tiers</h2>
+      <div class="space-y-4">
+        {
+          tiers.map((tier) => {
+            const providersInTier = tiered.filter(
+              (p) => p.data.partner_tier === tier.name,
+            );
+            return (
+              <div class="border border-border rounded-lg p-5">
+                <div class="flex flex-wrap items-center gap-3 mb-2">
+                  <span class="inline-block px-3 py-1 text-sm font-medium rounded-full bg-accent/10 text-accent">
+                    {tier.name}{" "}
+                    {tier.name !== "Emerging" && tier.name !== "Entry"
+                      ? "Partner"
+                      : ""}
+                  </span>
+                  <span class="text-xs text-text-muted">
+                    Target: {tier.target}
+                  </span>
+                </div>
+                <p class="text-sm text-text-muted mb-3">{tier.description}</p>
+                {providersInTier.length > 0 ? (
+                  <div class="flex flex-wrap gap-x-4 gap-y-1">
+                    {providersInTier.map((p) => (
+                      <a
+                        href={`${import.meta.env.BASE_URL}/${p.data.country_slug}/${p.id}/`}
+                        class="text-sm text-primary hover:underline"
+                      >
+                        {p.data.name}
+                      </a>
+                    ))}
+                  </div>
+                ) : (
+                  <p class="text-sm text-text-muted italic">
+                    No providers in this tier in our European directory yet.
+                  </p>
+                )}
+              </div>
+            );
+          })
+        }
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold mb-4">What about unlisted providers?</h2>
+      <p class="leading-relaxed mb-4">
+        Many excellent ERPNext service providers in this directory do not hold
+        an official Frappe partner tier. This does not reflect on their quality
+        or capability. Common reasons include:
+      </p>
+      <ul class="space-y-2 pl-6 list-disc text-text">
+        <li>
+          They offer self-hosted or third-party hosting instead of Frappe Cloud
+        </li>
+        <li>They are newer to the ecosystem and building their practice</li>
+        <li>
+          They focus on a local market where Frappe Cloud adoption is still
+          growing
+        </li>
+        <li>They choose not to participate in the formal partner program</li>
+      </ul>
+      <p class="leading-relaxed mt-4">
+        The partnership tier is one data point among many. When choosing a
+        provider, also consider their industry expertise, local regulatory
+        knowledge, language coverage, and track record.
+      </p>
+    </section>
+
+    <section class="border-t border-border pt-6">
+      <p class="text-sm text-text-muted">
+        Based on information from the
+        <a
+          href="https://frappe.io/partners/plans"
+          target="_blank"
+          rel="noopener"
+          class="text-primary hover:underline">Frappe Partner Plans</a
+        >
+        and
+        <a
+          href="https://frappe.io/partners/faq"
+          target="_blank"
+          rel="noopener"
+          class="text-primary hover:underline">Partner FAQ</a
+        >. For questions, contact <a
+          href="mailto:partner@frappe.io"
+          class="text-primary hover:underline">partner@frappe.io</a
+        >.
+      </p>
+    </section>
+  </div>
+</BaseLayout>
