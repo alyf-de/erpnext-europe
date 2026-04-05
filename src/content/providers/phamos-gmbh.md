@@ -94,7 +94,6 @@ Comprehensive documentation, ERPNext handbooks, workshops, support
 
 Case study documentation:
 - **GALLEHR**: Sustainability-focused company case study titled "Ikigai Meets Captain Planet: A Journey to Building a Sustainable Future with GALLEHR"
-- **SSV Reutlingen 1905 Fußball e.V.**: Partnership for the 2024/25 season in Oberliga Baden-Württemberg
 
 ### What is the typical size of your clients?
 

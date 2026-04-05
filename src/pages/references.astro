@@ -1,0 +1,141 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Icon from "../components/Icon.astro";
+import { references } from "../data/references";
+
+const grouped = new Map<string, typeof references>();
+for (const ref of references) {
+  const key = `${ref.provider_name}|||${ref.provider_slug}|||${ref.provider_country_slug}`;
+  if (!grouped.has(key)) grouped.set(key, []);
+  grouped.get(key)!.push(ref);
+}
+
+const sortedGroups = [...grouped.entries()].sort((a, b) =>
+  a[0].split("|||")[0].localeCompare(b[0].split("|||")[0]),
+);
+
+const industries = [...new Set(references.map((r) => r.industry))].sort();
+---
+
+<BaseLayout
+  title="ERPNext Client References"
+  description={`${references.length} organizations using ERPNext in production, implemented by European service providers.`}
+>
+  <nav class="text-sm text-text-muted mb-6">
+    <a href={import.meta.env.BASE_URL} class="hover:text-primary">Home</a>
+    <span class="mx-1">/</span>
+    <span>References</span>
+  </nav>
+
+  <h1 class="text-3xl font-bold text-primary mb-2">
+    ERPNext Client References
+  </h1>
+  <p class="text-text-muted mb-8 max-w-3xl">
+    {references.length} organizations running ERPNext in production, implemented
+    by European service providers. Sourced from partner websites and the official
+    Frappe partner directory.
+  </p>
+
+  <div class="flex flex-wrap gap-2 mb-8">
+    <button
+      data-filter="all"
+      class="filter-btn px-3 py-1.5 text-sm rounded-md bg-primary text-white transition-colors"
+    >
+      All ({references.length})
+    </button>
+    {
+      industries.map((ind) => {
+        const count = references.filter((r) => r.industry === ind).length;
+        return (
+          <button
+            data-filter={ind}
+            class="filter-btn px-3 py-1.5 text-sm rounded-md bg-surface text-text-muted hover:text-primary hover:bg-surface-dark transition-colors"
+          >
+            {ind} ({count})
+          </button>
+        );
+      })
+    }
+  </div>
+
+  <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3" id="references-grid">
+    {
+      references
+        .sort((a, b) => a.name.localeCompare(b.name))
+        .map((ref) => (
+          <div
+            class="ref-card p-4 rounded-lg border border-border bg-white hover:border-primary/30 transition-colors"
+            data-industry={ref.industry}
+          >
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <h3 class="font-semibold text-sm">
+                {ref.website ? (
+                  <a
+                    href={ref.website}
+                    target="_blank"
+                    rel="noopener"
+                    class="hover:text-primary"
+                  >
+                    {ref.name}{" "}
+                    <Icon name="external-link" size={12} />
+                  </a>
+                ) : (
+                  ref.name
+                )}
+              </h3>
+            </div>
+            <p class="text-xs text-text-muted mb-2">{ref.description}</p>
+            <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-text-muted">
+              <span class="inline-block px-2 py-0.5 rounded bg-surface">
+                {ref.industry}
+              </span>
+              <span>
+                <Icon name="map-pin" size={12} /> {ref.country}
+              </span>
+            </div>
+            <div class="mt-2 pt-2 border-t border-border">
+              <a
+                href={`${import.meta.env.BASE_URL}/${ref.provider_country_slug}/${ref.provider_slug}/`}
+                class="text-xs text-primary hover:underline"
+              >
+                Implemented by {ref.provider_name}
+              </a>
+            </div>
+          </div>
+        ))
+    }
+  </div>
+
+  <p class="text-xs text-text-muted mt-8" id="no-results" style="display:none">
+    No references match this filter.
+  </p>
+</BaseLayout>
+
+<script>
+  document.querySelectorAll(".filter-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const filter = (btn as HTMLElement).dataset.filter;
+      document.querySelectorAll(".filter-btn").forEach((b) => {
+        b.className =
+          "filter-btn px-3 py-1.5 text-sm rounded-md bg-surface text-text-muted hover:text-primary hover:bg-surface-dark transition-colors";
+      });
+      btn.className =
+        "filter-btn px-3 py-1.5 text-sm rounded-md bg-primary text-white transition-colors";
+
+      const cards = document.querySelectorAll(".ref-card");
+      let visible = 0;
+      cards.forEach((card) => {
+        const industry = (card as HTMLElement).dataset.industry;
+        if (filter === "all" || industry === filter) {
+          (card as HTMLElement).style.display = "";
+          visible++;
+        } else {
+          (card as HTMLElement).style.display = "none";
+        }
+      });
+
+      const noResults = document.getElementById("no-results");
+      if (noResults) noResults.style.display = visible === 0 ? "" : "none";
+    });
+  });
+</script>

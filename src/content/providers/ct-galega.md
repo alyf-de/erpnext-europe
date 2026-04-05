@@ -74,12 +74,6 @@ Training services included
 
 ## References & Track Record
 
-### Can you share one or two case studies or anonymized project examples?
-
-14 named clients listed as success cases ("Casos de éxito") on their website:
-- **HL Energía** (documented case study: ERP Pimesoft implementation)
-- **RAUL E HIJOS, S.L.**, **M. CASAIS SL**, **NALER ESTUDIOS Y PROYECTOS, S.L.**, **ELITE PADRON, SLL**, **RAMIRO VILA, S.L.**, **REBOBEN GONZALEZ, SL**, **Lindcold Iberia SL**, **ALUMETAL S.L.**, **REI ZENTOLO**, **PROGRAMACION INTEGRAL SA**, **HERRAJES REY, S.L.**, **RAMÓN RODRÍGUEZ OTERO, S.L.**, **EMPRESA GALLEGO CARREIRA SL**
-
 ### What is the typical size of your clients?
 
 Small and medium-sized enterprises (SMEs)

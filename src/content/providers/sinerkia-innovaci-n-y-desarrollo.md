@@ -87,12 +87,6 @@ Openbravo, Dolibarr, other online ERP systems
 
 ## References & Track Record
 
-### Can you share one or two case studies or anonymized project examples?
-
-Client testimonials from their website:
-- **Batiskafo Artesania**: Professional work with immediate response
-- **Creepers Custom Pinsoup España SL**: Web development, consulting, and online shop services
-
 ### What is the typical size of your clients?
 
 SMEs, business-oriented organizations

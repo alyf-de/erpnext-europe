@@ -7,7 +7,7 @@ country_slug: "germany"
 year_founded: 2000
 team_size: "Approximately 31 employees"
 partner_tier: "Bronze"
-industries: ["Manufacturing", "Public Sector & Nonprofits", "Professional Services"]
+industries: ["Manufacturing", "Public Sector & Nonprofits", "Professional Services", "Education"]
 languages: ["German", "English"]
 also_serves: ["Austria", "Switzerland", "Luxembourg"]
 ---

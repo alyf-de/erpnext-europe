@@ -7,7 +7,7 @@ country_slug: "switzerland"
 year_founded: 2017
 team_size: "2-10 employees; Management: 4 persons"
 partner_tier: null
-industries: ["Manufacturing", "Construction & Trades", "Professional Services", "Distribution & Logistics"]
+industries: ["Manufacturing", "Construction & Trades", "Professional Services", "Distribution & Logistics", "Retail & E-commerce"]
 languages: ["German", "English"]
 also_serves: ["Austria"]
 ---

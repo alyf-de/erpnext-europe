@@ -7,7 +7,7 @@ country_slug: "switzerland"
 year_founded: 2024
 team_size: "~5 employees"
 partner_tier: null
-industries: ["Public Sector & Nonprofits"]
+industries: ["Public Sector & Nonprofits", "Distribution & Logistics", "Technology & IT", "Manufacturing"]
 languages: ["German", "English"]
 also_serves: []
 ---
