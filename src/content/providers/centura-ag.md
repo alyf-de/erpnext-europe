@@ -79,8 +79,15 @@ Quick response times (specific SLAs not detailed)
 
 ### Can you share one or two case studies or anonymized project examples?
 
-Named clients from their website (centura.ch/kunden-partner):
-- **Simpera**, **Swiss Fibertec**, **Helbling**, **Direktkurier**, **Wechselraum**, **ODAN**, **Laware**, **Magenbrotrohner**, **Verkehrskadetten-Abteilung Rapperswil-Jona**
+Named clients:
+- **Odan GmbH**: Engineering firm specializing in product development, process optimization, and profile technology solutions
+- **Swiss Fibertec AG**: Carbon fiber specialist manufacturing high-performance composite components for racing, automotive, aerospace, and defense
+- **Verkehrskadetten-Abteilung Rapperswil-Jona**: Youth organization providing traffic regulation, route securing, parking management, and access control for events
+- **Wechselraum GmbH**: Project management, planning, and construction supervision for building technology systems including refrigeration, heating, ventilation, and sanitary installations
+- **direktkurier & büsslivermietung ag**: Courier and logistics company providing time-critical direct transport solutions throughout Switzerland and Europe, ISO 9001:2015 certified
+- **Helbling & Co. AG**: Engineering and metalworking firm providing machine building, metal construction, small-series manufacturing, and prototype solutions
+- **Magenbrot Rohner AG**: Traditional Swiss manufacturer and baker specializing in Magenbrot gingerbread
+- **Stiftung Simpera**: Foundation training specialized assistance dogs to help people with disabilities regain independence
 
 Partners: Stieger Treuhand, Futur. Research partner: OST Ostschweizer Fachhochschule.
 

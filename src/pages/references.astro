@@ -92,6 +92,14 @@ const industries = [...new Set(references.map((r) => r.industry))].sort();
               <span>
                 <Icon name="map-pin" size={12} /> {ref.country}
               </span>
+              {ref.employees && (
+                <span>
+                  <Icon name="users" size={12} /> {ref.employees}
+                </span>
+              )}
+              {ref.revenue && (
+                <span>{ref.revenue} revenue</span>
+              )}
             </div>
             <div class="mt-2 pt-2 border-t border-border">
               <a

@@ -71,12 +71,17 @@ Limendo provides practical training workshops to facilitate working with mERP, i
 
 ### Can you share one or two case studies or anonymized project examples?
 
-Named clients from their website:
-- **Kaufgut GmbH**: mERP for wholesale operations
-- **Mein Beck GmbH**: Full mERP from financial accounting to picking and inventory management
-- **Mulser Tore GmbH**: mERP for maintenance processes and CRM
-- **Aster GmbH**: mERP from personnel management through production planning
-- **Seeleiten**, **Anna Pichler**, **Pan**, **Reider** (logos displayed)
+Named clients:
+- **Mein Beck GmbH**: Bakery chain (250+ employees) — full mERP for purchasing, pricing, logistics; 1M+ invoices/year, 95% automated
+- **Kaufgut GmbH**: Wholesale distributor (50+ employees) — automated procurement incl. international sourcing
+- **Hotel Seeleiten GmbH**: Hotel (100+ employees) — end-to-end digitalization incl. PMS integration
+- **Mulser GmbH**: Industrial service (20+ employees) — Maintenance 4.0 with mobile maintenance, QR tracking, digital customer portal
+- **Aster GmbH**: Timber construction & manufacturing (80+ employees) — end-to-end value chain management incl. machine integration
+- **Sartori GmbH**: Transport & trade (50+ employees) — dispatch, trade, and financial processes on one platform
+- **Ossanna GmbH**: Wholesale (100+ employees) — scalable trading platform with integrated pricing logic
+- **Felderer GmbH**: Mechanical engineering — end-to-end digitalization of purchasing, production, and warehouse
+- **Reider GmbH**: Craft & retail (50+ employees) — fully integrated ERP with POS solution
+- **beyond hp gmbh**: Fitness & rehab services — consolidated 8+ systems into one platform
 
 ### What is the typical size of your clients?
 

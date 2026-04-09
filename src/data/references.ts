@@ -7,6 +7,8 @@ export interface Reference {
   provider_slug: string;
   provider_name: string;
   provider_country_slug: string;
+  employees?: string | null;
+  revenue?: string | null;
 }
 
 export const references: Reference[] = [
@@ -21,6 +23,7 @@ export const references: Reference[] = [
     provider_slug: "alyf-gmbh",
     provider_name: "ALYF GmbH",
     provider_country_slug: "germany",
+    revenue: "€2.5M",
   },
   {
     name: "DriveCon GmbH",
@@ -28,10 +31,12 @@ export const references: Reference[] = [
     industry: "Manufacturing",
     country: "Germany",
     description:
-      "Engineering firm with 40+ employees specializing in electrical systems and automation solutions for infrastructure and industrial projects.",
+      "Engineering firm specializing in electrical systems and automation solutions for infrastructure and industrial projects.",
     provider_slug: "alyf-gmbh",
     provider_name: "ALYF GmbH",
     provider_country_slug: "germany",
+    employees: "35",
+    revenue: "€5M",
   },
   {
     name: "WEROCK Technologies GmbH",
@@ -54,6 +59,8 @@ export const references: Reference[] = [
     provider_slug: "alyf-gmbh",
     provider_name: "ALYF GmbH",
     provider_country_slug: "germany",
+    employees: "40",
+    revenue: "€80M",
   },
   {
     name: "itsdave GmbH",
@@ -65,6 +72,8 @@ export const references: Reference[] = [
     provider_slug: "alyf-gmbh",
     provider_name: "ALYF GmbH",
     provider_country_slug: "germany",
+    employees: "10",
+    revenue: "€2M",
   },
   {
     name: "DACHDIGITAL GmbH",
@@ -89,6 +98,8 @@ export const references: Reference[] = [
     provider_slug: "k-k-software-ag",
     provider_name: "K&K Software AG",
     provider_country_slug: "germany",
+    employees: "25",
+    revenue: "€1.4M",
   },
   {
     name: "ELAN e.V.",
@@ -102,7 +113,7 @@ export const references: Reference[] = [
     provider_country_slug: "germany",
   },
   {
-    name: "Modulbox M.O Systeme",
+    name: "modulbox mo systeme GmbH",
     website: null,
     industry: "Manufacturing",
     country: "Germany",
@@ -111,6 +122,7 @@ export const references: Reference[] = [
     provider_slug: "k-k-software-ag",
     provider_name: "K&K Software AG",
     provider_country_slug: "germany",
+    revenue: "€3M",
   },
   {
     name: "Frank & Dvorak GmbH & Co. KG",
@@ -122,6 +134,8 @@ export const references: Reference[] = [
     provider_slug: "k-k-software-ag",
     provider_name: "K&K Software AG",
     provider_country_slug: "germany",
+    employees: "9",
+    revenue: "€2.5M",
   },
 
   // phamos GmbH clients
@@ -148,6 +162,8 @@ export const references: Reference[] = [
     provider_slug: "corebiz-engineering-gmbh",
     provider_name: "CoreBiz Engineering GmbH",
     provider_country_slug: "germany",
+    employees: "30",
+    revenue: "€2M",
   },
 
   // Grynn GmbH clients
@@ -165,7 +181,7 @@ export const references: Reference[] = [
 
   // libracore AG clients
   {
-    name: "Rubirosa",
+    name: "rubirosa management gmbh",
     website: "https://www.rubirosa.com",
     industry: "Retail & E-commerce",
     country: "Switzerland",
@@ -196,9 +212,11 @@ export const references: Reference[] = [
     provider_slug: "libracore-ag",
     provider_name: "libracore AG",
     provider_country_slug: "switzerland",
+    employees: "2",
+    revenue: "€1M",
   },
   {
-    name: "SELLCARE",
+    name: "Sellcare AG",
     website: "https://www.sellcare.ch",
     industry: "Distribution & Logistics",
     country: "Switzerland",
@@ -207,6 +225,7 @@ export const references: Reference[] = [
     provider_slug: "libracore-ag",
     provider_name: "libracore AG",
     provider_country_slug: "switzerland",
+    employees: "7",
   },
   {
     name: "Hoferhecht Stickereien",
@@ -228,35 +247,96 @@ export const references: Reference[] = [
     provider_slug: "libracore-ag",
     provider_name: "libracore AG",
     provider_country_slug: "switzerland",
+    employees: "15",
   },
 
   // Centura AG clients
   {
-    name: "Direktkurier",
+    name: "direktkurier & büsslivermietung ag",
     website: "https://direktkurier.ch",
     industry: "Distribution & Logistics",
     country: "Switzerland",
-    description: "Swiss courier and direct delivery service provider.",
+    description:
+      "Courier and logistics company providing time-critical direct transport solutions throughout Switzerland and Europe for over 35 years, ISO 9001:2015 certified.",
     provider_slug: "centura-ag",
     provider_name: "Centura AG",
     provider_country_slug: "switzerland",
   },
   {
-    name: "Simpera",
+    name: "Stiftung Simpera",
     website: "https://www.simpera.ch",
-    industry: "Technology & IT",
+    industry: "Public Sector & Nonprofits",
     country: "Switzerland",
-    description: "Swiss technology company and Centura AG client.",
+    description:
+      "Foundation training specialized assistance dogs — guide dogs, autism companion dogs, and therapy dogs — to help people with disabilities regain independence.",
     provider_slug: "centura-ag",
     provider_name: "Centura AG",
     provider_country_slug: "switzerland",
   },
   {
-    name: "Swiss Fibertec",
+    name: "Swiss Fibertec AG",
     website: "https://swiss-fibertec.com",
     industry: "Manufacturing",
     country: "Switzerland",
-    description: "Swiss fiber technology and advanced materials manufacturer.",
+    description:
+      "Carbon fiber specialist manufacturing high-performance composite components for racing, automotive, aerospace, and defense applications.",
+    provider_slug: "centura-ag",
+    provider_name: "Centura AG",
+    provider_country_slug: "switzerland",
+  },
+  {
+    name: "Odan GmbH",
+    website: "https://odan.ch",
+    industry: "Manufacturing",
+    country: "Switzerland",
+    description:
+      "Engineering firm specializing in product development, process optimization, and profile technology solutions for SMEs and startups.",
+    provider_slug: "centura-ag",
+    provider_name: "Centura AG",
+    provider_country_slug: "switzerland",
+  },
+  {
+    name: "Verkehrskadetten-Abteilung Rapperswil-Jona",
+    website: "https://vkarj.ch",
+    industry: "Public Sector & Nonprofits",
+    country: "Switzerland",
+    description:
+      "Youth organization providing traffic regulation, route securing, parking management, and access control for events and infrastructure projects.",
+    provider_slug: "centura-ag",
+    provider_name: "Centura AG",
+    provider_country_slug: "switzerland",
+    employees: "7",
+  },
+  {
+    name: "Wechselraum GmbH",
+    website: "https://www.wechselraum.ch",
+    industry: "Construction & Trades",
+    country: "Switzerland",
+    description:
+      "Project management, planning, and construction supervision for building technology systems including refrigeration, heating, ventilation, and sanitary installations.",
+    provider_slug: "centura-ag",
+    provider_name: "Centura AG",
+    provider_country_slug: "switzerland",
+    employees: "21",
+  },
+  {
+    name: "Helbling & Co. AG",
+    website: "https://helbling.net",
+    industry: "Manufacturing",
+    country: "Switzerland",
+    description:
+      "Engineering and metalworking firm providing machine building, metal construction, small-series manufacturing, and prototype solutions.",
+    provider_slug: "centura-ag",
+    provider_name: "Centura AG",
+    provider_country_slug: "switzerland",
+  },
+  {
+    name: "Magenbrot Rohner AG",
+    website: "https://magenbrotrohner.ch",
+    industry: "Agriculture & Food",
+    country: "Switzerland",
+    description:
+      "Traditional Swiss manufacturer and baker specializing in Magenbrot, a classic Swiss gingerbread confectionery.",
     provider_slug: "centura-ag",
     provider_name: "Centura AG",
     provider_country_slug: "switzerland",
@@ -264,37 +344,56 @@ export const references: Reference[] = [
 
   // Limendo GmbH clients
   {
-    name: "Kaufgut GmbH",
-    website: "https://www.kaufgut.it",
-    industry: "Distribution & Logistics",
-    country: "Italy",
-    description:
-      "Five-generation family business distributing kitchen utensils and household articles internationally, based in Bolzano.",
-    provider_slug: "limendo-gmbh",
-    provider_name: "Limendo GmbH",
-    provider_country_slug: "italy",
-  },
-  {
     name: "Mein Beck GmbH",
     website: null,
     industry: "Agriculture & Food",
     country: "Italy",
     description:
-      "Bakery business using full mERP suite from financial accounting to picking and inventory management.",
+      "Bakery chain running full ERPNext suite for purchasing, pricing, and logistics. Processes over 1 million invoices per year with 95% automation.",
     provider_slug: "limendo-gmbh",
     provider_name: "Limendo GmbH",
     provider_country_slug: "italy",
+    employees: "250+",
+    revenue: "€20M",
   },
   {
-    name: "Mulser Tore GmbH",
+    name: "Kaufgut GmbH",
+    website: "https://www.kaufgut.it",
+    industry: "Distribution & Logistics",
+    country: "Italy",
+    description:
+      "Wholesale distributor of kitchen utensils and household articles. Automated procurement and seamless integration of international purchasing processes.",
+    provider_slug: "limendo-gmbh",
+    provider_name: "Limendo GmbH",
+    provider_country_slug: "italy",
+    employees: "50+",
+    revenue: "€20M",
+  },
+  {
+    name: "Hotel Seeleiten GmbH",
+    website: null,
+    industry: "Professional Services",
+    country: "Italy",
+    description:
+      "Hotel achieving end-to-end digitalization of all internal processes with ERPNext, including property management system integration.",
+    provider_slug: "limendo-gmbh",
+    provider_name: "Limendo GmbH",
+    provider_country_slug: "italy",
+    employees: "100+",
+    revenue: "€8M",
+  },
+  {
+    name: "Mulser GmbH",
     website: null,
     industry: "Manufacturing",
     country: "Italy",
     description:
-      "Door and gate manufacturer using mERP for maintenance processes and CRM functionality.",
+      "Industrial service and trades company implementing 'Maintenance 4.0' with ERPNext — mobile maintenance, QR tracking, and a digital customer portal.",
     provider_slug: "limendo-gmbh",
     provider_name: "Limendo GmbH",
     provider_country_slug: "italy",
+    employees: "20+",
+    revenue: "€2.5M",
   },
   {
     name: "Aster GmbH",
@@ -302,10 +401,77 @@ export const references: Reference[] = [
     industry: "Manufacturing",
     country: "Italy",
     description:
-      "Manufacturing company using mERP from personnel management through production planning.",
+      "Timber construction and manufacturing company using ERPNext for end-to-end value chain management including machine integration.",
     provider_slug: "limendo-gmbh",
     provider_name: "Limendo GmbH",
     provider_country_slug: "italy",
+    employees: "80+",
+    revenue: "€15M",
+  },
+  {
+    name: "Sartori GmbH",
+    website: null,
+    industry: "Distribution & Logistics",
+    country: "Italy",
+    description:
+      "Transport and trading company integrating dispatch, trade, and financial processes on a single centralized ERPNext platform.",
+    provider_slug: "limendo-gmbh",
+    provider_name: "Limendo GmbH",
+    provider_country_slug: "italy",
+    employees: "50+",
+    revenue: "€10M",
+  },
+  {
+    name: "Ossanna GmbH",
+    website: null,
+    industry: "Distribution & Logistics",
+    country: "Italy",
+    description:
+      "Wholesale distributor running a scalable ERPNext trading platform with integrated pricing and conditions logic.",
+    provider_slug: "limendo-gmbh",
+    provider_name: "Limendo GmbH",
+    provider_country_slug: "italy",
+    employees: "100+",
+    revenue: "€35M",
+  },
+  {
+    name: "Felderer GmbH",
+    website: null,
+    industry: "Manufacturing",
+    country: "Italy",
+    description:
+      "Mechanical engineering company achieving end-to-end digitalization of purchasing, production, and warehouse processes with ERPNext.",
+    provider_slug: "limendo-gmbh",
+    provider_name: "Limendo GmbH",
+    provider_country_slug: "italy",
+    employees: "10+",
+    revenue: "€2M",
+  },
+  {
+    name: "Reider GmbH",
+    website: null,
+    industry: "Retail & E-commerce",
+    country: "Italy",
+    description:
+      "Craft and retail business using a fully integrated ERPNext including seamless point-of-sale integration.",
+    provider_slug: "limendo-gmbh",
+    provider_name: "Limendo GmbH",
+    provider_country_slug: "italy",
+    employees: "50+",
+    revenue: "€5M",
+  },
+  {
+    name: "beyond hp gmbh",
+    website: null,
+    industry: "Professional Services",
+    country: "Italy",
+    description:
+      "Fitness and rehabilitation services provider consolidating 8+ systems into a single centralized ERPNext platform.",
+    provider_slug: "limendo-gmbh",
+    provider_name: "Limendo GmbH",
+    provider_country_slug: "italy",
+    employees: "10+",
+    revenue: "€500K",
   },
 
 ];
