@@ -15,24 +15,23 @@ also_serves: ["Austria"]
 
 ### In which countries do you actively serve clients?
 
-Germany, Austria, and globally. Based in Leipzig (Peterssteinweg 14, 04107 Leipzig).
-
-ALYF GmbH was founded in March 2020 by Raffael Meyer and Samuel Danieli as a specialist ERPNext service provider. Raffael's journey with ERPNext began during his Business Informatics studies at the University of Leipzig, when he identified a significant market gap for ERPNext implementation services in Germany. He started freelancing in January 2019 before formally incorporating the company.
-
-Key milestones:
-- January 2019: Raffael Meyer begins freelancing with ERPNext customization
-- March 2020: ALYF GmbH founded; office opened in Leipzig-Lindenau
-- December 2021: Moved to larger office in Leipzig Zentrum-Süd
-- June 2022: Became official ERPNext distribution partner
-- September 2023: Raffael Meyer awarded "Best Framework Contributor" at Frappeverse 2023
-- June 2024: Reached Bronze Partner status (currently the only Bronze Partner in Europe)
-- June 2025: Frappe Technologies recognized ALYF as the only German company making significant contributions to ERPNext and Frappe Framework development
+Germany, Austria, and globally.
 
 ## ERPNext Experience
 
 ### Since when have you been implementing ERPNext?
 
-Since 2019 (freelance) / 2020 (as ALYF GmbH). Founded specifically as an ERPNext specialist.
+ALYF GmbH was founded in March 2020 by Raffael Meyer and Samuel Danieli as a specialist ERPNext service provider. Raffael's journey with ERPNext began during his Business Informatics studies at the University of Leipzig, when he identified a significant market gap for ERPNext implementation services in Germany. He started freelancing in January 2019 before formally incorporating the company.
+
+Key milestones:
+
+- January 2019: Raffael Meyer begins freelancing with ERPNext customization
+- March 2020: ALYF GmbH founded; office opened in Leipzig-Lindenau
+- December 2021: Moved to larger office in Leipzig Zentrum-Süd
+- June 2022: Became official ERPNext distribution partner
+- September 2023: Raffael Meyer awarded "Best Framework Contributor" at Frappeverse 2023
+- June 2024: Reached Bronze Partner status (at this time the only Bronze Partner in Europe)
+- June 2025: Frappe Technologies recognized ALYF as the only German company making significant contributions to ERPNext and Frappe Framework development
 
 ### Do you contribute to ERPNext core or maintain publicly available Frappe apps? If yes, please link them.
 
@@ -169,7 +168,7 @@ Sample project costs:
 ALYF is the most technically embedded ERPNext service provider in Europe. With over 100,000 lines of code contributed to Frappe and ERPNext—more than any other service provider worldwide—they are not just implementers but core platform maintainers. Key differentiators:
 
 - **Deepest technical expertise**: Team includes Top 3 contributors to both Frappe Framework and ERPNext globally. "Best Framework Contributor" award at Frappeverse 2023.
-- **Only Bronze Partner in Europe**: Official recognition from Frappe Technologies as the only German company making significant contributions to ERPNext and Frappe Framework.
+- **Official recognition from Frappe Technologies**: as the only German company making significant contributions to ERPNext and Frappe Framework.
 - **German compliance leadership**: Maintains the definitive German localization stack (erpnext_germany, DATEV, SKR03/04, ZUGFeRD/XRechnung, GoBD compliance).
 - **Upstream-first approach**: Contributions go into the official codebase, ensuring customer solutions remain upgrade-compatible with no proprietary lock-in.
 - **Community stewardship**: Maintains Crowdin translation platform, funds DeepL machine translations, maintains German glossaries, and publishes unofficial API documentation.
