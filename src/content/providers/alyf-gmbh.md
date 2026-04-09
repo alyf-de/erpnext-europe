@@ -35,7 +35,7 @@ Key milestones:
 
 ### Do you contribute to ERPNext core or maintain publicly available Frappe apps? If yes, please link them.
 
-Yes, extensive contributions. ALYF has contributed more than 100,000 lines of code to Frappe and ERPNext—more than any other service provider worldwide. Raffael Meyer is a Top 3 Frappe Framework developer globally (245+ features and bug fixes). Marica D'souza, Senior Developer at ALYF, is a Top 3 ERPNext contributor globally.
+Yes, extensive contributions. ALYF has contributed more than 100,000 lines of code to Frappe and ERPNext—more than any other service provider worldwide. Raffael Meyer is a Top 3 Frappe Framework developer globally (245+ features and bug fixes). Former ALYF Senior Developer Marica D'souza was a Top 3 ERPNext contributor globally.
 
 Notable core contributions include the dunning system for overdue invoices (integrated into ERPNext v13), security enhancements, the context-specific translation system with Crowdin integration, and link field performance optimizations.
 
@@ -167,7 +167,7 @@ Sample project costs:
 
 ALYF is the most technically embedded ERPNext service provider in Europe. With over 100,000 lines of code contributed to Frappe and ERPNext—more than any other service provider worldwide—they are not just implementers but core platform maintainers. Key differentiators:
 
-- **Deepest technical expertise**: Team includes Top 3 contributors to both Frappe Framework and ERPNext globally. "Best Framework Contributor" award at Frappeverse 2023.
+- **Deepest technical expertise**: ALYF's contributor track record includes Top 3 contributors to both Frappe Framework and ERPNext globally. "Best Framework Contributor" award at Frappeverse 2023.
 - **Official recognition from Frappe Technologies**: as the only German company making significant contributions to ERPNext and Frappe Framework.
 - **German compliance leadership**: Maintains the definitive German localization stack (erpnext_germany, DATEV, SKR03/04, ZUGFeRD/XRechnung, GoBD compliance).
 - **Upstream-first approach**: Contributions go into the official codebase, ensuring customer solutions remain upgrade-compatible with no proprietary lock-in.
