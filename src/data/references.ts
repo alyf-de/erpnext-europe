@@ -86,6 +86,19 @@ export const references: Reference[] = [
     provider_name: "ALYF GmbH",
     provider_country_slug: "germany",
   },
+  {
+    name: "Landesverband Sächsischer Angler e. V.",
+    website: "https://angeln-sachsen.de",
+    industry: "Public Sector & Nonprofits",
+    country: "Germany",
+    description:
+      "Membership-based fishing association using ERPNext for member administration and water management across Saxony's network of clubs and associations.",
+    provider_slug: "alyf-gmbh",
+    provider_name: "ALYF GmbH",
+    provider_country_slug: "germany",
+    employees: "24",
+    revenue: "€3M",
+  },
 
   // K&K Software AG clients
   {
