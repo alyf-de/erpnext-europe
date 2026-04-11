@@ -163,6 +163,172 @@ export const references: Reference[] = [
     provider_name: "phamos GmbH",
     provider_country_slug: "germany",
   },
+  {
+    name: "suncycle GmbH",
+    website: "https://suncycle.energy",
+    industry: "Professional Services",
+    country: "Germany",
+    description:
+      "Aftersales specialist for the solar industry providing maintenance, QA/QC, and service across the entire PV value chain, with international operations in Europe, USA, and China.",
+    provider_slug: "phamos-gmbh",
+    provider_name: "phamos GmbH",
+    provider_country_slug: "germany",
+    employees: "80",
+  },
+  {
+    name: "SimpaTec GmbH",
+    website: "https://www.simpatec.com",
+    industry: "Technology & IT",
+    country: "Germany",
+    description:
+      "Provider of 3D CAE simulation software and engineering consulting for injection moulding, thermoforming, and composite materials, headquartered in Reutlingen.",
+    provider_slug: "phamos-gmbh",
+    provider_name: "phamos GmbH",
+    provider_country_slug: "germany",
+  },
+  {
+    name: "Watt Analytics GmbH",
+    website: "https://watt-analytics.com",
+    industry: "Technology & IT",
+    country: "Austria",
+    description:
+      "Vienna-based energy management platform using manufacturer-independent AI to orchestrate energy communities, assets, smart meters, and EV charging operations.",
+    provider_slug: "phamos-gmbh",
+    provider_name: "phamos GmbH",
+    provider_country_slug: "germany",
+  },
+  {
+    name: "AKOS Medientechnik GmbH",
+    website: null,
+    industry: "Technology & IT",
+    country: "Germany",
+    description:
+      "Media technology integrator designing and installing professional audio, video, and conference room systems for corporate and public sector clients.",
+    provider_slug: "phamos-gmbh",
+    provider_name: "phamos GmbH",
+    provider_country_slug: "germany",
+  },
+  {
+    name: "becharged GmbH",
+    website: "https://becharged.de",
+    industry: "Technology & IT",
+    country: "Germany",
+    description:
+      "E-mobility specialist providing cloud-based OCPP load management, charging hardware, and whitelabel apps for residential, commercial, and municipal charging networks.",
+    provider_slug: "phamos-gmbh",
+    provider_name: "phamos GmbH",
+    provider_country_slug: "germany",
+  },
+  {
+    name: "AMR Mannesmann GmbH",
+    website: "https://www.amr-mannesmann.at",
+    industry: "Professional Services",
+    country: "Austria",
+    description:
+      "Engineering services firm focused on planning, documentation, and digitalisation of technical and industrial plants, with offices in Austria and Germany.",
+    provider_slug: "phamos-gmbh",
+    provider_name: "phamos GmbH",
+    provider_country_slug: "germany",
+  },
+  {
+    name: "forbisnet UG",
+    website: null,
+    industry: "Technology & IT",
+    country: "Germany",
+    description:
+      "German IT and network services provider running ERPNext for its consulting and project operations.",
+    provider_slug: "phamos-gmbh",
+    provider_name: "phamos GmbH",
+    provider_country_slug: "germany",
+  },
+  {
+    name: "EUSECTRA",
+    website: "https://joint-research-centre.ec.europa.eu",
+    industry: "Public Sector & Nonprofits",
+    country: "Germany",
+    description:
+      "European Nuclear Security Training Centre operated by the EU Joint Research Centre in Karlsruhe, providing hands-on training on the detection of nuclear and radioactive materials.",
+    provider_slug: "phamos-gmbh",
+    provider_name: "phamos GmbH",
+    provider_country_slug: "germany",
+  },
+  {
+    name: "Brandenburgische Technische Universität Cottbus-Senftenberg",
+    website: "https://www.b-tu.de",
+    industry: "Education",
+    country: "Germany",
+    description:
+      "Public technical university in Brandenburg with roughly 7,000 students, combining engineering research with applied sciences across two campuses.",
+    provider_slug: "phamos-gmbh",
+    provider_name: "phamos GmbH",
+    provider_country_slug: "germany",
+  },
+  {
+    name: "SSV Reutlingen 05 Fußball e.V.",
+    website: "https://www.ssv-reutlingen.de",
+    industry: "Public Sector & Nonprofits",
+    country: "Germany",
+    description:
+      "Traditional football club based at Stadion an der Kreuzeiche in Reutlingen, using ERPNext to run club administration and member operations.",
+    provider_slug: "phamos-gmbh",
+    provider_name: "phamos GmbH",
+    provider_country_slug: "germany",
+  },
+  {
+    name: "Reutlingen Eagles",
+    website: "https://www.reutlingen-eagles.de",
+    industry: "Public Sector & Nonprofits",
+    country: "Germany",
+    description:
+      "American football club with senior, women's, and youth teams competing in the German 2nd and 3rd Liga, active in Reutlingen since 2012.",
+    provider_slug: "phamos-gmbh",
+    provider_name: "phamos GmbH",
+    provider_country_slug: "germany",
+  },
+  {
+    name: "egg-tech GmbH",
+    website: "https://egg-tech.de",
+    industry: "Construction & Trades",
+    country: "Germany",
+    description:
+      "Regional general contractor for photovoltaic installations, battery storage, wallboxes, and building-integrated PV, based in Reutlingen and founded in 2011.",
+    provider_slug: "phamos-gmbh",
+    provider_name: "phamos GmbH",
+    provider_country_slug: "germany",
+  },
+  {
+    name: "edevis GmbH",
+    website: "https://www.edevis.com",
+    industry: "Manufacturing",
+    country: "Germany",
+    description:
+      "Stuttgart-based specialist in non-destructive testing with active thermography, with 500+ inspection systems deployed worldwide across automotive, aerospace, and battery production.",
+    provider_slug: "phamos-gmbh",
+    provider_name: "phamos GmbH",
+    provider_country_slug: "germany",
+  },
+  {
+    name: "Hanses GmbH",
+    website: "https://hanses.de",
+    industry: "Manufacturing",
+    country: "Germany",
+    description:
+      "Precision CNC contract manufacturer in Eslohe handling complex turned, milled, and ground components for machinery and plant engineering, ISO 9001 certified.",
+    provider_slug: "phamos-gmbh",
+    provider_name: "phamos GmbH",
+    provider_country_slug: "germany",
+  },
+  {
+    name: "BRECHT Feinmechanik GmbH",
+    website: null,
+    industry: "Manufacturing",
+    country: "Germany",
+    description:
+      "Precision manufacturer in Wannweil specialising in CNC turning, milling, and water-jet cutting for medical, laboratory, aerospace, and automotive components; ISO 9001 and ISO 13485 certified.",
+    provider_slug: "phamos-gmbh",
+    provider_name: "phamos GmbH",
+    provider_country_slug: "germany",
+  },
 
   // CoreBiz Engineering clients
   {
